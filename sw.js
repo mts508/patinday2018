@@ -3,9 +3,10 @@ self.addEventListener('install', function(event) {
     caches.open('site').then(function(cache) {
       return cache.addAll(
         [
-          '/index.html',
-          '/mega.jpg',
-          '/yMJRMIlzdpvBhQQL_Qq7dy0.woff2'
+          'index.html',
+          'manifest.json',
+          'mega.jpg',
+          'yMJRMIlzdpvBhQQL_Qq7dy0.woff2'
         ]
       );
     })
